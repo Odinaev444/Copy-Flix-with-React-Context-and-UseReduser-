@@ -29,3 +29,5 @@ jobs:
     - run: npm run build --if-present
       env:
         CI: false
+    - run: sudo mv proj/Copy-Flix-with-React-Context-and-UseReduser-/Copy-Flix-with-React-Context-and-UseReduser-/build /var/www/couk/
+    - run: sudo systemctl nginx restart
