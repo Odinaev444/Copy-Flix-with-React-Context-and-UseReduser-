@@ -31,11 +31,12 @@ jobs:
         CI: false
 
   setup: 
-  
+
     runs-on: self-hosted
     needs: [build] 
 
     steps:
     - name: Setup Nginx
        run: mv proj/Copy-Flix-with-React-Context-and-UseReduser-/Copy-Flix-with-React-Context-and-UseReduser-/build /var/www/couk/
-       run: systemctl nginx restart     
+       run: systemctl nginx restart
+       
