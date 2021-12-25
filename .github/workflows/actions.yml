@@ -36,7 +36,7 @@ jobs:
     needs: [build] 
 
     steps:
-    - name: Setup Nginx
+    - name: Move build folder
     - run: mv proj/Copy-Flix-with-React-Context-and-UseReduser-/Copy-Flix-with-React-Context-and-UseReduser-/build /var/www/couk/
+    - name: Restart Nginx
     - run: systemctl nginx restart
-    
