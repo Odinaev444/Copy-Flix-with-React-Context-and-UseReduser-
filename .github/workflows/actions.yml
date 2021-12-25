@@ -41,5 +41,5 @@ jobs:
       run : |
         [[ -d /var/www/couk/build ]] && rm -r /var/www/couk/build/
         mv /actions-runner/proj/Copy-Flix-with-React-Context-and-UseReduser-/Copy-Flix-with-React-Context-and-UseReduser-/build /var/www/couk/
-    - name: Restart Nginx
-      run : service nginx restart
+#    - name: Restart Nginx
+#      run : service nginx restart
