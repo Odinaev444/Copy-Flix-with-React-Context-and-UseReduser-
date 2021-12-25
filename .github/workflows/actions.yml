@@ -40,4 +40,4 @@ jobs:
     - name: Move build folder
       run : mv /actions-runner/proj/Copy-Flix-with-React-Context-and-UseReduser-/Copy-Flix-with-React-Context-and-UseReduser-/build /var/www/couk/
     - name: Restart Nginx
-      run : systemctl nginx restart
+      run : service nginx restart
